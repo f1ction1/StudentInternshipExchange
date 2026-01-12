@@ -13,7 +13,7 @@ The project was created to:
 - learn **Modular Monolith architecture** in practice,
 - apply **Clean Architecture** and **DDD-inspired modeling**,
 - implement **CQRS** with clear separation of commands and queries,
-- **Event-driven communication** to maintain loose coupling between modules,
+- implement **Event-driven communication** to maintain loose coupling between modules,
 - build a non-trivial system beyond basic CRUD.
 
 Because of its educational nature:
