@@ -1,0 +1,42 @@
+.header {
+  
+  margin: 0 auto;
+  padding: 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-self: center;
+}
+
+.list {
+  display: flex;
+  gap: 1rem;
+  text-align: center;
+}
+
+.list a {
+  text-decoration: none;
+  color: black;
+}
+
+.list a:hover,
+.list a.active {
+  color: blue !important; 
+}
+
+.logoBox {
+  display: flex;
+  align-items: center; 
+  justify-content: center;
+}
+
+.logo {
+  height: 20px;
+  width: auto;
+  display: block;
+}
+
+ul {
+  list-style: none !important;
+  margin: 0 !important;
+  padding: 0 !important;
+}

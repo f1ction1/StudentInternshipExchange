@@ -1,0 +1,14 @@
+"variables": {
+  "pagination": {
+    "count": 20,
+    "page": 0
+  },
+  "filter": {
+    "keywords": "",
+    "cityId."
+    countryId:,
+    industryIds []
+    
+  },
+  "sort": "BY_BUSINESS_SCORE",
+}

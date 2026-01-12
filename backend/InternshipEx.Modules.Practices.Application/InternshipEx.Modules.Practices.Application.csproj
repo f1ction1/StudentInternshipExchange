@@ -1,0 +1,22 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net9.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="MassTransit.Abstractions" Version="8.5.6" />
+    <PackageReference Include="MediatR" Version="13.0.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\InternshipEx.Modules.Practices.Contracts\InternshipEx.Modules.Practices.Contracts.csproj" />
+    <ProjectReference Include="..\InternshipEx.Modules.Practices.Domain\InternshipEx.Modules.Practices.Domain.csproj" />
+    <ProjectReference Include="..\InternshipEx.Modules.Users.Contracts\InternshipEx.Modules.Users.Contracts.csproj" />
+    <ProjectReference Include="..\Modules.Common.Application\Modules.Common.Application.csproj" />
+    <ProjectReference Include="..\Modules.Common.Application\Modules.Common.Application.csproj" />
+  </ItemGroup>
+
+</Project>

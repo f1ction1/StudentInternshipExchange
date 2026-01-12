@@ -1,0 +1,181 @@
+.filtersContainer {
+    display: flex;
+    padding: 1.5rem 0;
+    gap: 1rem;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    border-radius: 8px;
+    padding: 1.5rem;
+}
+
+.filterItem {
+    min-width: 180px;
+}
+
+.dropdownToggle {
+    min-width: 180px;
+    background: white !important;
+    border: 1px solid #dee2e6 !important;
+    color: #000000 !important;
+    padding: 0.5rem 1rem;
+    border-radius: 6px;
+    font-size: 0.95rem;
+    transition: all 0.2s ease;
+}
+
+.dropdownToggle:hover {
+    border-color: #0d6efd !important;
+    background: white !important;
+    color: #000000 !important;
+}
+
+.dropdownToggle:focus {
+    border-color: #0d6efd !important;
+    box-shadow: 0 0 0 0.2rem rgba(13, 110, 253, 0.15) !important;
+    background: white !important;
+    color: #495057 !important;
+}
+
+.dropdownMenu {
+    padding: 0.75rem;
+    max-height: 350px;
+    overflow-y: auto;
+    border-radius: 6px;
+    border: 1px solid #dee2e6;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    min-width: 220px;
+}
+
+.dropdownMenu::-webkit-scrollbar {
+    width: 8px;
+}
+
+.dropdownMenu::-webkit-scrollbar-track {
+    background: #f1f1f1;
+    border-radius: 4px;
+}
+
+.dropdownMenu::-webkit-scrollbar-thumb {
+    background: #888;
+    border-radius: 4px;
+}
+
+.dropdownMenu::-webkit-scrollbar-thumb:hover {
+    background: #555;
+}
+
+.checkboxItem {
+    padding: 0.4rem 0.5rem;
+    margin-bottom: 0.3rem;
+    border-radius: 4px;
+    transition: background 0.15s ease;
+}
+
+.checkboxItem:hover {
+    background: #f8f9fa;
+}
+
+.checkboxItem input[type="checkbox"] {
+    cursor: pointer;
+    margin-right: 0.5rem;
+}
+
+.checkboxItem label {
+    cursor: pointer;
+    margin-bottom: 0;
+    user-select: none;
+}
+
+.selectInput {
+    min-width: 180px;
+    padding: 0.5rem 1rem;
+    border: 1px solid #dee2e6;
+    border-radius: 6px;
+    font-size: 0.95rem;
+    background: white;
+    cursor: pointer;
+    transition: all 0.2s ease;
+}
+
+.selectInput:hover:not(:disabled) {
+    border-color: #0d6efd;
+}
+
+.selectInput:focus {
+    border-color: #0d6efd;
+    box-shadow: 0 0 0 0.2rem rgba(13, 110, 253, 0.15);
+    outline: none;
+}
+
+.selectInput:disabled {
+    background-color: #e9ecef;
+    cursor: not-allowed;
+    opacity: 0.6;
+}
+
+.remoteCheckbox {
+    display: flex;
+    align-items: center;
+    padding: 0.5rem 1rem;
+    background: white;
+    border-radius: 6px;
+    border: 1px solid #dee2e6;
+    transition: all 0.2s ease;
+}
+
+.remoteCheckbox:hover {
+    border-color: #0d6efd;
+}
+
+.remoteCheckbox input[type="checkbox"] {
+    width: 18px;
+    height: 18px;
+    margin-right: 0.5rem;
+    cursor: pointer;
+}
+
+.remoteCheckbox label {
+    margin-bottom: 0;
+    cursor: pointer;
+    font-weight: 500;
+    user-select: none;
+}
+
+.clearButton {
+    padding: 0.5rem 1.25rem;
+    background: white;
+    border: 1px solid #dc3545;
+    color: #dc3545;
+    border-radius: 6px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.2s ease;
+}
+
+.clearButton:hover {
+    background: #dc3545;
+    color: white;
+}
+
+.clearButton:active {
+    transform: scale(0.98);
+}
+
+@media (max-width: 768px) {
+    .filtersContainer {
+        flex-direction: column;
+        align-items: stretch;
+    }
+    
+    .filterItem,
+    .selectInput,
+    .dropdownToggle {
+        width: 100%;
+        min-width: 100%;
+    }
+    
+    .remoteCheckbox {
+        justify-content: center;
+    }
+}

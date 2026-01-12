@@ -1,0 +1,22 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net9.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Dapper" Version="2.1.66" />
+    <PackageReference Include="MassTransit" Version="8.5.6" />
+    <PackageReference Include="Microsoft.AspNetCore.Mvc.Core" Version="2.3.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\InternshipEx.Modules.Applications.Contracts\InternshipEx.Modules.Applications.Contracts.csproj" />
+    <ProjectReference Include="..\InternshipEx.Modules.Practices.Contracts\InternshipEx.Modules.Practices.Contracts.csproj" />
+    <ProjectReference Include="..\InternshipEx.Recommendations.Persistence\InternshipEx.Recommendations.Persistence.csproj" />
+    <ProjectReference Include="..\Modules.Common.Infrastructure\Modules.Common.Infrastructure.csproj" />
+  </ItemGroup>
+
+</Project>

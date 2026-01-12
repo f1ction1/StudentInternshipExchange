@@ -1,0 +1,24 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net9.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Internship.Modules.Auth.IntegrationEvents\Internship.Modules.Auth.IntegrationEvents.csproj" />
+    <ProjectReference Include="..\InternshipEx.Modules.Users.Contracts\InternshipEx.Modules.Users.Contracts.csproj" />
+    <ProjectReference Include="..\InternshipEx.Modules.Users.Domain\InternshipEx.Modules.Users.Domain.csproj" />
+    <ProjectReference Include="..\Modules.Common.Application\Modules.Common.Application.csproj" />
+    <ProjectReference Include="..\Modules.Common.Application\Modules.Common.Application.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="FluentValidation" Version="12.0.0" />
+    <PackageReference Include="MassTransit" Version="8.5.2" />
+    <PackageReference Include="MediatR" Version="13.0.0" />
+    <PackageReference Include="MediatR.Extensions.FluentValidation.AspNetCore" Version="6.0.0" />
+  </ItemGroup>
+
+</Project>
